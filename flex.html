@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display:flex;
+            gap: 20px; 
+        }
+        .box{
+            background-color: steelblue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .iteam{
+            height: 100px;
+            width: 200px;
+            border: 1px solid tomato;
+            background-color: aquamarine;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Box</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nisi illo ea saepe autem, reiciendis eius provident nesciunt quia pariatur odio impedit dicta nostrum nemo ratione adipisci totam repudiandae. Sequi impedit eaque soluta qui. Ab possimus esse magnam officia consequatur.</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos similique, non harum ducimus blanditiis nisi hic. Facere reprehenderit inventore ipsam iure earum. Voluptatem, illo eos quisquam maiores ut non! Dignissimos corrupti labore aspernatur aperiam delectus, id doloribus et excepturi consequatur?</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="iteam">Iteam - 1</div>
+        <div class="iteam">Iteam - 2</div>
+        <div class="iteam">Iteam - 3</div>
+        <div class="iteam">Iteam - 4</div>
+        <div class="iteam">Iteam - 5</div>
+        <div class="iteam">Iteam - 6</div>
+        <div class="iteam">Iteam - 7</div>
+        <div class="iteam">Iteam - 8</div>
+        <div class="iteam">Iteam - 9</div>
+        <div class="iteam">Iteam - 10</div>
+        <div class="iteam">Iteam - 11</div>
+        <div class="iteam">Iteam - 12</div>
+    </div>
+</body>
+</html>
